@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BarcodeScanner.SettingsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="When a barcode is found..." Margin="20,10" />
+            <StackLayout Orientation="Horizontal" BackgroundColor="AliceBlue">
+                <Label Text="Beep" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" Margin="20,0"/>
+                <CheckBox x:Name="BeepCheck" Margin="20,0" CheckedChanged="BeepCheck_CheckedChanged"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" BackgroundColor="AliceBlue">
+                <Label Text="Vibrate" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" Margin="20,0"/>
+                <CheckBox x:Name="VibrateCheck" Margin="20,0" CheckedChanged="VibrateCheck_CheckedChanged"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" BackgroundColor="AliceBlue">
+                <Label Text="Clipboard" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" Margin="20,0"/>
+                <CheckBox x:Name="ClipboardCheck" Margin="20,0" CheckedChanged="ClipboardCheck_CheckedChanged"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" BackgroundColor="AliceBlue">
+                <Label Text="Duplicate" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" Margin="20,0"/>
+                <CheckBox x:Name="DuplicateCheck" Margin="20,0" CheckedChanged="DuplicateCheck_CheckedChanged"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" BackgroundColor="AliceBlue">
+                <Label Text="History" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" Margin="20,0"/>
+                <CheckBox x:Name="HistoryCheck" Margin="20,0" CheckedChanged="HistoryCheck_CheckedChanged"/>
+            </StackLayout>
+            <Label Text="General" Margin="20,10" />
+            <StackLayout Orientation="Horizontal" BackgroundColor="AliceBlue">
+                <Label Text="Bulk" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" Margin="20,0"/>
+                <CheckBox x:Name="BulkCheck" Margin="20,0" CheckedChanged="BulkCheck_CheckedChanged"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
